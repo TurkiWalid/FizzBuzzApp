@@ -10,16 +10,19 @@ import UIKit
 
 class BasicResultViewModel: NSObject, OutputProtocol {
     var basicinputIterableModel: BasicInputIterableModel!
-    private var sumOfInts: Int!
+    private var mainFactor: Int!
     
-    init(inputIterableModel: InputIterableModel) {
-        self.basicinputIterableModel = inputIterableModel as? BasicInputIterableModel
-        sumOfInts = self.basicinputIterableModel.int1 + self.basicinputIterableModel.int2
+    init(inputIterableModel: InputIterableModel) throws {
+        guard let basicinputIterableModel = inputIterableModel as? BasicInputIterableModel else {
+            throw InputErrors.InputFormModelNotMatchingRequiredType
+        }
+        self.basicinputIterableModel = basicinputIterableModel
+        mainFactor = self.basicinputIterableModel.int1 * self.basicinputIterableModel.int2
     }
     
     func getCellValue(from index: Int) -> String {
         let value = index + 1
-        if value % sumOfInts == 0{
+        if value % mainFactor == 0{
             return basicinputIterableModel.bothKey
         }
         if value % basicinputIterableModel.int1 == 0 {

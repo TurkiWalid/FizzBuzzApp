@@ -10,6 +10,8 @@
 		0E7CCC6928E16D500039B06B /* BasicResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CCC6828E16D500039B06B /* BasicResultViewController.swift */; };
 		0E7CCC6B28E16DC60039B06B /* BasicResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CCC6A28E16DC60039B06B /* BasicResultViewModel.swift */; };
 		0E7CCC6D28E16DF60039B06B /* OutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CCC6C28E16DF50039B06B /* OutputProtocol.swift */; };
+		0E7CCC6F28E176690039B06B /* BasicResultViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CCC6E28E176690039B06B /* BasicResultViewModelTest.swift */; };
+		0E7CCC7128E17AC50039B06B /* OtherOutputIterableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CCC7028E17AC50039B06B /* OtherOutputIterableModel.swift */; };
 		0EB048EF28E10B1E0032AE44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB048EE28E10B1E0032AE44 /* AppDelegate.swift */; };
 		0EB048F128E10B1E0032AE44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB048F028E10B1E0032AE44 /* SceneDelegate.swift */; };
 		0EB048F828E10B210032AE44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB048F728E10B210032AE44 /* Assets.xcassets */; };
@@ -57,6 +59,8 @@
 		0E7CCC6828E16D500039B06B /* BasicResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicResultViewController.swift; sourceTree = "<group>"; };
 		0E7CCC6A28E16DC60039B06B /* BasicResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicResultViewModel.swift; sourceTree = "<group>"; };
 		0E7CCC6C28E16DF50039B06B /* OutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputProtocol.swift; sourceTree = "<group>"; };
+		0E7CCC6E28E176690039B06B /* BasicResultViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicResultViewModelTest.swift; sourceTree = "<group>"; };
+		0E7CCC7028E17AC50039B06B /* OtherOutputIterableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherOutputIterableModel.swift; sourceTree = "<group>"; };
 		0EB048EB28E10B1E0032AE44 /* FizzBuzzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB048EE28E10B1E0032AE44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EB048F028E10B1E0032AE44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 				0EB0493628E11D4E0032AE44 /* Mockups */,
 				0EB0491E28E10CBD0032AE44 /* InputFormValidatorTest.swift */,
 				0EB0493428E11C810032AE44 /* BasicInputViewModelTest.swift */,
+				0E7CCC6E28E176690039B06B /* BasicResultViewModelTest.swift */,
 			);
 			path = BasicInput;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 			children = (
 				0EB0493728E11D790032AE44 /* BasicInputFormValidatorMockupAlwaysTrue.swift */,
 				0EB0494328E129310032AE44 /* OtherInputFormModel.swift */,
+				0E7CCC7028E17AC50039B06B /* OtherOutputIterableModel.swift */,
 			);
 			path = Mockups;
 			sourceTree = "<group>";
@@ -435,7 +441,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EB0493528E11C810032AE44 /* BasicInputViewModelTest.swift in Sources */,
+				0E7CCC6F28E176690039B06B /* BasicResultViewModelTest.swift in Sources */,
 				0EB0493828E11D790032AE44 /* BasicInputFormValidatorMockupAlwaysTrue.swift in Sources */,
+				0E7CCC7128E17AC50039B06B /* OtherOutputIterableModel.swift in Sources */,
 				0EB0491F28E10CBD0032AE44 /* InputFormValidatorTest.swift in Sources */,
 				0EB0494428E129310032AE44 /* OtherInputFormModel.swift in Sources */,
 			);

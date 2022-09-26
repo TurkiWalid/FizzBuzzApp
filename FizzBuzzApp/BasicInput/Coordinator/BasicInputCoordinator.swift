@@ -24,7 +24,19 @@ class BasicInputCoordinator: Coordinator {
     func goToResult(with data: InputIterableModel){
         let vc = BasicResultViewController.instantiate()
         vc.coordinator = self
-        vc.vm = BasicResultViewModel(inputIterableModel: data)
-        navigationController.pushViewController(vc, animated: true)
+        do {
+           let vm = try BasicResultViewModel(inputIterableModel: data)
+            vc.vm = vm
+            navigationController.pushViewController(vc, animated: true)
+        } catch {
+            self.showInternalErrorAlert()
+        }
+    }
+    
+    private func showInternalErrorAlert() {
+        let alert = UIAlertController(title: "InternalError", message: "Something happend", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Try again", style: .default)
+        alert.addAction(action)
+        navigationController.present(alert, animated: true)
     }
 }

@@ -50,7 +50,7 @@ class BasicInputViewModelTest: XCTestCase {
         //Arrange
         inputValidatorMockup = BasicInputFormValidator()
         sut = BasicInputViewModel(formValidator: inputValidatorMockup)
-        let otherInputFormModel = OtherInput()
+        let otherInputFormModel = OtherInputFormModel()
         //Act//Assert
         XCTAssertThrowsError(try sut.process(input: otherInputFormModel), "BasicInputViewModel process throwing when receives Other object as input") { error in
             XCTAssertTrue(error is InputErrors, "BasicInputViewModel process throwing unknown Error")
