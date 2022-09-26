@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E7CCC6928E16D500039B06B /* BasicResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CCC6828E16D500039B06B /* BasicResultViewController.swift */; };
+		0E7CCC6B28E16DC60039B06B /* BasicResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CCC6A28E16DC60039B06B /* BasicResultViewModel.swift */; };
+		0E7CCC6D28E16DF60039B06B /* OutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CCC6C28E16DF50039B06B /* OutputProtocol.swift */; };
 		0EB048EF28E10B1E0032AE44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB048EE28E10B1E0032AE44 /* AppDelegate.swift */; };
 		0EB048F128E10B1E0032AE44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB048F028E10B1E0032AE44 /* SceneDelegate.swift */; };
-		0EB048F328E10B1E0032AE44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB048F228E10B1E0032AE44 /* ViewController.swift */; };
 		0EB048F828E10B210032AE44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB048F728E10B210032AE44 /* Assets.xcassets */; };
 		0EB048FB28E10B210032AE44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB048F928E10B210032AE44 /* LaunchScreen.storyboard */; };
 		0EB0491028E10B210032AE44 /* FizzBuzzAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0490F28E10B210032AE44 /* FizzBuzzAppUITests.swift */; };
@@ -52,10 +54,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E7CCC6828E16D500039B06B /* BasicResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicResultViewController.swift; sourceTree = "<group>"; };
+		0E7CCC6A28E16DC60039B06B /* BasicResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicResultViewModel.swift; sourceTree = "<group>"; };
+		0E7CCC6C28E16DF50039B06B /* OutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputProtocol.swift; sourceTree = "<group>"; };
 		0EB048EB28E10B1E0032AE44 /* FizzBuzzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB048EE28E10B1E0032AE44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EB048F028E10B1E0032AE44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0EB048F228E10B1E0032AE44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0EB048F728E10B210032AE44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EB048FA28E10B210032AE44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EB048FC28E10B210032AE44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,7 +141,6 @@
 				0EB0492428E113220032AE44 /* BasicInput */,
 				0EB048EE28E10B1E0032AE44 /* AppDelegate.swift */,
 				0EB048F028E10B1E0032AE44 /* SceneDelegate.swift */,
-				0EB048F228E10B1E0032AE44 /* ViewController.swift */,
 				0EB048F728E10B210032AE44 /* Assets.xcassets */,
 				0EB048F928E10B210032AE44 /* LaunchScreen.storyboard */,
 				0EB048FC28E10B210032AE44 /* Info.plist */,
@@ -174,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				0EB0492528E113810032AE44 /* BasicInputViewModel.swift */,
+				0E7CCC6A28E16DC60039B06B /* BasicResultViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -207,6 +211,7 @@
 				0EB0492B28E116340032AE44 /* InputCheckProtocol.swift */,
 				0EB0493928E11E680032AE44 /* InputFormModel.swift */,
 				0EB0493B28E11EB50032AE44 /* InputIterableModel.swift */,
+				0E7CCC6C28E16DF50039B06B /* OutputProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				0EB0495128E133420032AE44 /* BasicInputFormViewController.swift */,
+				0E7CCC6828E16D500039B06B /* BasicResultViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -403,22 +409,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EB048F328E10B1E0032AE44 /* ViewController.swift in Sources */,
 				0EB0492128E10D690032AE44 /* BasicInputFormValidator.swift in Sources */,
 				0EB0494D28E132AD0032AE44 /* Coordinator.swift in Sources */,
 				0EB0493C28E11EB50032AE44 /* InputIterableModel.swift in Sources */,
 				0EB0492628E113810032AE44 /* BasicInputViewModel.swift in Sources */,
+				0E7CCC6D28E16DF60039B06B /* OutputProtocol.swift in Sources */,
 				0EB0495228E133420032AE44 /* BasicInputFormViewController.swift in Sources */,
 				0EB0492C28E116340032AE44 /* InputCheckProtocol.swift in Sources */,
 				0EB048EF28E10B1E0032AE44 /* AppDelegate.swift in Sources */,
 				0EB0493A28E11E680032AE44 /* InputFormModel.swift in Sources */,
 				0EB0494E28E132AD0032AE44 /* BasicInputCoordinator.swift in Sources */,
 				0EB048F128E10B1E0032AE44 /* SceneDelegate.swift in Sources */,
+				0E7CCC6928E16D500039B06B /* BasicResultViewController.swift in Sources */,
 				0EB0493E28E11ED30032AE44 /* BasicInputIterableModel.swift in Sources */,
 				0EB0493028E117070032AE44 /* BasicInputFormValidatorProtocol.swift in Sources */,
 				0EB0494128E124DE0032AE44 /* InputErrors.swift in Sources */,
 				0EB0492928E113AB0032AE44 /* BasicInputFormModel.swift in Sources */,
 				0EB0494C28E132AD0032AE44 /* Storyboarded.swift in Sources */,
+				0E7CCC6B28E16DC60039B06B /* BasicResultViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

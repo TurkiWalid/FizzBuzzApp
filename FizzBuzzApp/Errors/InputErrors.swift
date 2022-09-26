@@ -8,8 +8,8 @@
 import Foundation
 
 enum InputErrors: Error {
-    case InputFormModelNotMatchingRequiredType
-    case InputStringsNotAcceptable
-    case InputNumberNotAcceptable
-    case InputNumbersLogicNotRespected
+    case InputFormModelNotMatchingRequiredType //= "Internal error"
+    case InputStringsNotAcceptable //= "Strings are not acceptable"
+    case InputNumberNotAcceptable //= "Please fill all numbers"
+    case InputNumbersLogicNotRespected// = "Limit must be above Int1 and Int2"
 }

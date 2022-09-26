@@ -46,6 +46,27 @@ class BasicInputViewModel: InputCheckProtocol{
         return BasicInputIterableModel(int1: int1, int2: int2, limit: limit, key1: inputTyped.key1, key2: inputTyped.key2, bothKey: inputTyped.key1+inputTyped.key2)
     }
     
-    
+    func doFizz(with input: InputFormModel, didSuccess: @escaping(_ data: InputIterableModel)->Void, didFail: @escaping(_ error: String)->Void ){
+        do {
+            let inputIterableModel = try process(input: input)
+            didSuccess(inputIterableModel)
+        }catch {
+            switch error {
+            case InputErrors.InputFormModelNotMatchingRequiredType:
+                didFail("Internal error")
+                break
+            case InputErrors.InputStringsNotAcceptable:
+                didFail("Strings are not acceptable")
+            case InputErrors.InputNumberNotAcceptable:
+                didFail("Please fill all numbers")
+                break
+            case InputErrors.InputNumbersLogicNotRespected:
+                didFail("Limit must be above Int1 and Int2")
+                break
+            default:
+                didFail("Other Error")
+            }
+        }
+    }
     
 }

@@ -21,15 +21,10 @@ class BasicInputCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
     
-//    func buySubscription() {
-//        let vc = BuyViewController.instantiate()
-//        vc.coordinator = self
-//        navigationController.pushViewController(vc, animated: true)
-//    }
-//    
-//    func createAccount(){
-//        let vc = CreateAccountViewController.instantiate()
-//        vc.coordinator = self
-//        navigationController.pushViewController(vc, animated: true)
-//    }
+    func goToResult(with data: InputIterableModel){
+        let vc = BasicResultViewController.instantiate()
+        vc.coordinator = self
+        vc.vm = BasicResultViewModel(inputIterableModel: data)
+        navigationController.pushViewController(vc, animated: true)
+    }
 }
