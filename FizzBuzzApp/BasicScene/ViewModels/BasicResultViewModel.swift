@@ -33,6 +33,10 @@ class BasicResultViewModel: NSObject, OutputProtocol {
         }
         return "\(value)"
     }
+}
+
+//MARK: UITableView Datasource methods
+extension BasicResultViewModel {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return basicinputIterableModel.limit

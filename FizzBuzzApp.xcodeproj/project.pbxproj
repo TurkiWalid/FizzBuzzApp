@@ -32,10 +32,11 @@
 		0EB0494128E124DE0032AE44 /* InputErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0494028E124DE0032AE44 /* InputErrors.swift */; };
 		0EB0494428E129310032AE44 /* OtherInputFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0494328E129310032AE44 /* OtherInputFormModel.swift */; };
 		0EB0494C28E132AD0032AE44 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0494928E132AD0032AE44 /* Storyboarded.swift */; };
-		0EB0494D28E132AD0032AE44 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0494A28E132AD0032AE44 /* Coordinator.swift */; };
-		0EB0494E28E132AD0032AE44 /* BasicInputCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0494B28E132AD0032AE44 /* BasicInputCoordinator.swift */; };
+		0EB0494E28E132AD0032AE44 /* BasicSceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0494B28E132AD0032AE44 /* BasicSceneCoordinator.swift */; };
 		0EB0495028E133220032AE44 /* BasicInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB0494F28E133220032AE44 /* BasicInput.storyboard */; };
-		0EB0495228E133420032AE44 /* BasicInputFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0495128E133420032AE44 /* BasicInputFormViewController.swift */; };
+		0EB0495228E133420032AE44 /* BasicInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0495128E133420032AE44 /* BasicInputViewController.swift */; };
+		0ECA27BD28E32341004E42F1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA27BC28E32341004E42F1 /* Coordinator.swift */; };
+		0ECA27BF28E32F93004E42F1 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA27BE28E32F93004E42F1 /* InputValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,10 +86,11 @@
 		0EB0494028E124DE0032AE44 /* InputErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputErrors.swift; sourceTree = "<group>"; };
 		0EB0494328E129310032AE44 /* OtherInputFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherInputFormModel.swift; sourceTree = "<group>"; };
 		0EB0494928E132AD0032AE44 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
-		0EB0494A28E132AD0032AE44 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = ../../../CoordinatorExample/CoordinatorExample/Coordinator.swift; sourceTree = "<group>"; };
-		0EB0494B28E132AD0032AE44 /* BasicInputCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicInputCoordinator.swift; sourceTree = "<group>"; };
+		0EB0494B28E132AD0032AE44 /* BasicSceneCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicSceneCoordinator.swift; sourceTree = "<group>"; };
 		0EB0494F28E133220032AE44 /* BasicInput.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BasicInput.storyboard; sourceTree = "<group>"; };
-		0EB0495128E133420032AE44 /* BasicInputFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInputFormViewController.swift; sourceTree = "<group>"; };
+		0EB0495128E133420032AE44 /* BasicInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInputViewController.swift; sourceTree = "<group>"; };
+		0ECA27BC28E32341004E42F1 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		0ECA27BE28E32F93004E42F1 /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +144,7 @@
 				0EB0494528E132280032AE44 /* Coordinator */,
 				0EB0493F28E124CE0032AE44 /* Errors */,
 				0EB0492A28E116050032AE44 /* Protocols */,
-				0EB0492428E113220032AE44 /* BasicInput */,
+				0EB0492428E113220032AE44 /* BasicScene */,
 				0EB048EE28E10B1E0032AE44 /* AppDelegate.swift */,
 				0EB048F028E10B1E0032AE44 /* SceneDelegate.swift */,
 				0EB048F728E10B210032AE44 /* Assets.xcassets */,
@@ -186,7 +188,7 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		0EB0492428E113220032AE44 /* BasicInput */ = {
+		0EB0492428E113220032AE44 /* BasicScene */ = {
 			isa = PBXGroup;
 			children = (
 				0EB0495328E1346C0032AE44 /* Coordinator */,
@@ -197,7 +199,7 @@
 				0EB0492328E113070032AE44 /* ViewModels */,
 				0EB0494F28E133220032AE44 /* BasicInput.storyboard */,
 			);
-			path = BasicInput;
+			path = BasicScene;
 			sourceTree = "<group>";
 		};
 		0EB0492728E113970032AE44 /* Models */ = {
@@ -216,6 +218,7 @@
 				0EB0493928E11E680032AE44 /* InputFormModel.swift */,
 				0EB0493B28E11EB50032AE44 /* InputIterableModel.swift */,
 				0E7CCC6C28E16DF50039B06B /* OutputProtocol.swift */,
+				0ECA27BE28E32F93004E42F1 /* InputValidator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -260,7 +263,7 @@
 		0EB0494528E132280032AE44 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				0EB0494A28E132AD0032AE44 /* Coordinator.swift */,
+				0ECA27BC28E32341004E42F1 /* Coordinator.swift */,
 				0EB0494928E132AD0032AE44 /* Storyboarded.swift */,
 			);
 			path = Coordinator;
@@ -269,7 +272,7 @@
 		0EB0494628E1323E0032AE44 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0EB0495128E133420032AE44 /* BasicInputFormViewController.swift */,
+				0EB0495128E133420032AE44 /* BasicInputViewController.swift */,
 				0E7CCC6828E16D500039B06B /* BasicResultViewController.swift */,
 			);
 			path = ViewControllers;
@@ -278,7 +281,7 @@
 		0EB0495328E1346C0032AE44 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				0EB0494B28E132AD0032AE44 /* BasicInputCoordinator.swift */,
+				0EB0494B28E132AD0032AE44 /* BasicSceneCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -416,15 +419,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EB0492128E10D690032AE44 /* BasicInputFormValidator.swift in Sources */,
-				0EB0494D28E132AD0032AE44 /* Coordinator.swift in Sources */,
 				0EB0493C28E11EB50032AE44 /* InputIterableModel.swift in Sources */,
 				0EB0492628E113810032AE44 /* BasicInputViewModel.swift in Sources */,
 				0E7CCC6D28E16DF60039B06B /* OutputProtocol.swift in Sources */,
-				0EB0495228E133420032AE44 /* BasicInputFormViewController.swift in Sources */,
+				0EB0495228E133420032AE44 /* BasicInputViewController.swift in Sources */,
 				0EB0492C28E116340032AE44 /* InputCheckProtocol.swift in Sources */,
 				0EB048EF28E10B1E0032AE44 /* AppDelegate.swift in Sources */,
 				0EB0493A28E11E680032AE44 /* InputFormModel.swift in Sources */,
-				0EB0494E28E132AD0032AE44 /* BasicInputCoordinator.swift in Sources */,
+				0ECA27BF28E32F93004E42F1 /* InputValidator.swift in Sources */,
+				0ECA27BD28E32341004E42F1 /* Coordinator.swift in Sources */,
+				0EB0494E28E132AD0032AE44 /* BasicSceneCoordinator.swift in Sources */,
 				0EB048F128E10B1E0032AE44 /* SceneDelegate.swift in Sources */,
 				0E7CCC6928E16D500039B06B /* BasicResultViewController.swift in Sources */,
 				0EB0493E28E11ED30032AE44 /* BasicInputIterableModel.swift in Sources */,

@@ -7,11 +7,11 @@
 
 import UIKit
 
-class BasicInputFormViewController: UIViewController, Storyboarded {
+class BasicInputViewController: UIViewController, Storyboarded {
     static var storyboardName: String {
         return "BasicInput"
     }
-    var coordinator: BasicInputCoordinator?
+    var coordinator: BasicSceneCoordinator?
     var vm: InputCheckProtocol?
     
     @IBOutlet weak var int1TextField: UITextField!

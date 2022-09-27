@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-class BasicInputCoordinator: Coordinator {
+class BasicSceneCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
     
@@ -16,7 +16,7 @@ class BasicInputCoordinator: Coordinator {
     }
     
     func start() {
-        let vc = BasicInputFormViewController.instantiate()
+        let vc = BasicInputViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }

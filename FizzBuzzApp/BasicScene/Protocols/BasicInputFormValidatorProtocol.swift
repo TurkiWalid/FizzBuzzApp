@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol BasicInputFormValidatorProtocol {
+protocol BasicInputFormValidatorProtocol: InputFormValidator {
     func isInputLogicValid(int1: Int, int2: Int, limit: Int) -> Bool
     func isInputAcceptable(from value: String) -> Bool
     func areStringsAcceptable(key1: String, key2: String) -> Bool

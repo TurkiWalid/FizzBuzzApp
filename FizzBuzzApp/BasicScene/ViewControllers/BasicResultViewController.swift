@@ -12,7 +12,7 @@ class BasicResultViewController: UIViewController, Storyboarded {
         return "BasicInput"
     }
 
-    var coordinator: BasicInputCoordinator?
+    var coordinator: BasicSceneCoordinator?
     var vm: OutputProtocol?
     @IBOutlet weak var tableView: UITableView!
     
